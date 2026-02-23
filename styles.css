@@ -462,7 +462,9 @@ a {
 }
 
 /* ══════════════════════════════════════════════════
-   TICKER / MARQUEE  (seamless via -50% trick)
+   TICKER / MARQUEE
+   JS clones the content once → track = 2× content width
+   Animation moves -50% = exactly 1× content = seamless
 ══════════════════════════════════════════════════ */
 .ticker-wrap {
   overflow: hidden;
@@ -501,15 +503,19 @@ a {
   display: flex;
   align-items: center;
   width: max-content;
-  animation: ticker-scroll 30s linear infinite;
+  /* grows to fit all cloned items */
   will-change: transform;
+}
+
+/* animation applied by JS once clone is ready */
+.ticker-track.running {
+  animation: ticker-scroll var(--ticker-duration, 30s) linear infinite;
 }
 
 .ticker-wrap:hover .ticker-track {
   animation-play-state: paused;
 }
 
-/* Moves exactly -50% so the duplicate set lines up perfectly = seamless loop */
 @keyframes ticker-scroll {
   0% {
     transform: translateX(0);
@@ -518,6 +524,8 @@ a {
   100% {
     transform: translateX(-50%);
   }
+
+  /* -50% of 2× = exactly 1 set */
 }
 
 .ticker-item {
@@ -528,6 +536,7 @@ a {
   color: var(--text-muted);
   padding: 0 1.8rem;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .ticker-sep {
@@ -793,6 +802,10 @@ a {
 
 .feedchain {
   background: linear-gradient(135deg, #fdf0e8 0%, #f5dece 100%);
+}
+
+.quizapp {
+  background: linear-gradient(135deg, #f0eaff 0%, #ddd4f5 100%);
 }
 
 .preview-icon {

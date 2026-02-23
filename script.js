@@ -1,6 +1,27 @@
 /* ─────────────────────────────────────────────
-   Portfolio Script v2 — Enoch Jackson C
+   Portfolio Script v3 — Enoch Jackson C
 ───────────────────────────────────────────── */
+
+// ── SEAMLESS TICKER ───────────────────────────
+// Clone the track content once → total width = 2×
+// CSS animates -50% which is exactly 1× → perfect loop
+(function initTicker() {
+  const track = document.getElementById('ticker-track');
+  if (!track) return;
+
+  // Duplicate inner content
+  track.innerHTML += track.innerHTML;
+
+  // Scale speed to pixel width (px per second = 80)
+  const pxPerSec = 80;
+  const totalWidth = track.scrollWidth;          // full 2× width
+  const duration = (totalWidth / 2) / pxPerSec; // time for 1× width
+  track.style.setProperty('--ticker-duration', duration + 's');
+
+  // Start animation only after clone is rendered
+  requestAnimationFrame(() => track.classList.add('running'));
+})();
+
 
 // ── NAV ACTIVE LINK ──────────────────────────
 const navLinks = document.querySelectorAll('.nav-links a');

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Enoch Jackson C — Backend-Oriented Software Engineer. Java & Database Enthusiast." />
+  <title>Enoch Jackson C | Backend Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ─── BACKGROUND ─────────────────────────────── -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+
+  <!-- ─── NAV ───────────────────────────────────── -->
+  <header id="header" role="banner">
+    <nav class="nav-pill" role="navigation" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo-icon" aria-label="Home">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <rect x="2" y="2" width="10" height="10" rx="2.5" fill="currentColor" opacity=".9" />
+          <rect x="16" y="2" width="10" height="10" rx="2.5" fill="currentColor" opacity=".5" />
+          <rect x="2" y="16" width="10" height="10" rx="2.5" fill="currentColor" opacity=".5" />
+          <rect x="16" y="16" width="10" height="10" rx="2.5" fill="currentColor" opacity=".9" />
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <!-- mobile dropdown -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul>
+        <li><a href="#hero" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ─── HERO ──────────────────────────────────── -->
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge fade-up">
+        <span class="badge-dot"></span> Open to internships &amp; collaborations
+      </div>
+      <h1 class="hero-title fade-up delay-1">
+        Hi, I'm <span class="accent">Enoch Jackson</span><br />
+        Backend-Oriented Engineer
+      </h1>
+      <p class="hero-sub fade-up delay-2">
+        ~ I build clean, reliable backend systems with structured data, scalable logic, and clarity in design. ~
+      </p>
+      <div class="hero-cta fade-up delay-3">
+        <a href="#projects" class="btn btn-ghost">View Projects <span>↓</span></a>
+        <a href="#contact" class="btn btn-outline">Contact Me ↗</a>
+      </div>
+    </div>
+    <!-- scroll arrow -->
+    <a href="#about" class="scroll-arrow fade-up delay-3" aria-label="Scroll to about">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M10 4v12M4 10l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </a>
+  </section>
+
+  <!-- ─── TICKER ─────────────────────────────────── -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">Java</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Backend Engineer</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Database Design</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">REST APIs</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Python</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">SQL</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Clean Code</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">System Design</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Java</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Backend Engineer</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Database Design</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">REST APIs</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Python</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">SQL</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Clean Code</span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">System Design</span>
+      <span class="ticker-sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ─── ABOUT ─────────────────────────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-label fade-up">ABOUT</h2>
+      <div class="glass-card about-card fade-up delay-1">
+        <div class="about-header">
+          <p class="about-intro">My intention —</p>
+          <h3 class="about-headline">Let's see that</h3>
+        </div>
+        <p class="about-body">
+          Backend-focused engineering student at <strong>Panimalar Engineering College, Chennai</strong>. Drawn to the
+          craft of building systems that work reliably — structured databases, clean API design, and logic that's easy
+          to reason about. My coding philosophy: readable over clever, clarity over complexity.
+        </p>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-num">3+</span><span class="stat-desc">Projects</span></div>
+          <div class="stat"><span class="stat-num">2+</span><span class="stat-desc">Languages</span></div>
+          <div class="stat"><span class="stat-num">IT</span><span class="stat-desc">Engineering</span></div>
+        </div>
+        <a href="mailto:enochjackson441@gmail.com" class="btn btn-ghost about-btn">Get in Touch ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ────────────────────────────────── -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-label fade-up">SKILLS &amp; TOOLS</h2>
+      <div class="skills-icons fade-up delay-1">
+        <div class="skill-icon" title="Java">
+          <div class="icon-circle" style="background:#e76f00">
+            <svg width="26" height="26" viewBox="0 0 48 48" fill="white">
+              <path
+                d="M22.5 5s-5 4.5-5 8.5c0 4 4 7 4 7s-9-1-9 6c0 5 8 8 8 8H11l-3 9h28l-3-9H23s8-3 8-8c0-7-9-6-9-6s4-3 4-7c0-4-3.5-8.5-3.5-8.5z" />
+            </svg>
+          </div>
+          <span>Java</span>
+        </div>
+        <div class="skill-icon" title="Python">
+          <div class="icon-circle" style="background:#3776ab">
+            <svg width="26" height="26" viewBox="0 0 48 48" fill="white">
+              <path
+                d="M24 4c-8 0-7 3.5-7 3.5V11h14v2H13s-7-.5-7 9 6.5 9.5 6.5 9.5h4v-4.5S16 22 22 22h9s6 .5 6-6V10s1-6-13-6zm-2 4a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM24 44c8 0 7-3.5 7-3.5V37H17v-2h18s7 .5 7-9S35.5 17 35.5 17h-4v4.5S32 26 26 26h-9s-6-.5-6 6v6s-1 6 13 6zm2-4a1.5 1.5 0 110-3 1.5 1.5 0 010 3z" />
+            </svg>
+          </div>
+          <span>Python</span>
+        </div>
+        <div class="skill-icon" title="SQL / MySQL">
+          <div class="icon-circle" style="background:#00618a">
+            <svg width="26" height="26" viewBox="0 0 48 48" fill="white">
+              <ellipse cx="24" cy="12" rx="16" ry="6" />
+              <path d="M8 12v8c0 3.3 7.2 6 16 6s16-2.7 16-6v-8" fill="none" stroke="white" stroke-width="2" />
+              <path d="M8 20v8c0 3.3 7.2 6 16 6s16-2.7 16-6v-8" fill="none" stroke="white" stroke-width="2" />
+            </svg>
+          </div>
+          <span>SQL</span>
+        </div>
+        <div class="skill-icon" title="Spring">
+          <div class="icon-circle" style="background:#6db33f">
+            <svg width="26" height="26" viewBox="0 0 48 48" fill="white">
+              <path d="M40 8c0 0-10 2-16 12C18 30 12 36 6 38c0 0 6 4 14-2 4-3 8-10 10-16 2-6 4-10 10-12z" />
+              <circle cx="10" cy="38" r="3" />
+            </svg>
+          </div>
+          <span>Spring</span>
+        </div>
+        <div class="skill-icon" title="Flutter">
+          <div class="icon-circle" style="background:#027dfd">
+            <svg width="26" height="26" viewBox="0 0 48 48" fill="white">
+              <path d="M12 24L28 8h8L20 24l16 16h-8L12 24z" />
+              <path d="M20 24l8 8h8L20 24z" opacity=".6" />
+            </svg>
+          </div>
+          <span>Flutter</span>
+        </div>
+        <div class="skill-icon" title="Git">
+          <div class="icon-circle" style="background:#f05032">
+            <svg width="26" height="26" viewBox="0 0 48 48" fill="white">
+              <path
+                d="M44 22.6L25.4 4a2.8 2.8 0 00-4 0l-4 4 5 5a3.3 3.3 0 014.2 4.2l4.8 4.9a3.3 3.3 0 11-2 1.9l-4.5-4.5V31a3.3 3.3 0 11-2.6.1V19a3.3 3.3 0 01-1.8-4.3L15.4 9.8l-11.8 12a2.8 2.8 0 000 4L22.2 44a2.8 2.8 0 004 0L44 26.6a2.8 2.8 0 000-4z" />
+            </svg>
+          </div>
+          <span>Git</span>
+        </div>
+        <div class="skill-icon" title="React">
+          <div class="icon-circle" style="background:#222">
+            <svg width="26" height="26" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="4" fill="#61dafb" />
+              <ellipse cx="24" cy="24" rx="20" ry="8" stroke="#61dafb" stroke-width="2" fill="none" />
+              <ellipse cx="24" cy="24" rx="20" ry="8" stroke="#61dafb" stroke-width="2" fill="none"
+                transform="rotate(60 24 24)" />
+              <ellipse cx="24" cy="24" rx="20" ry="8" stroke="#61dafb" stroke-width="2" fill="none"
+                transform="rotate(120 24 24)" />
+            </svg>
+          </div>
+          <span>React</span>
+        </div>
+        <div class="skill-icon" title="OpenCV">
+          <div class="icon-circle" style="background:#5c3ee8">
+            <svg width="26" height="26" viewBox="0 0 48 48" fill="white">
+              <circle cx="16" cy="24" r="6" />
+              <circle cx="32" cy="14" r="6" />
+              <circle cx="32" cy="34" r="6" />
+            </svg>
+          </div>
+          <span>OpenCV</span>
+        </div>
+        <div class="skill-icon" title="Postman">
+          <div class="icon-circle" style="background:#ff6c37">
+            <svg width="26" height="26" viewBox="0 0 48 48" fill="white">
+              <circle cx="24" cy="24" r="18" stroke="white" stroke-width="2" fill="none" />
+              <path d="M24 14v10l7 4" stroke="white" stroke-width="2" stroke-linecap="round" fill="none" />
+            </svg>
+          </div>
+          <span>Postman</span>
+        </div>
+        <div class="skill-icon" title="GitHub">
+          <div class="icon-circle" style="background:#24292e">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+          </div>
+          <span>GitHub</span>
+        </div>
+        <div class="skill-icon" title="MySQL">
+          <div class="icon-circle" style="background:#4479a1">
+            <svg width="26" height="26" viewBox="0 0 48 48" fill="white">
+              <path d="M8 14h4v20H8zm8 0h4l8 12V14h4v20h-4L16 22v12h-4V14z" />
+            </svg>
+          </div>
+          <span>MySQL</span>
+        </div>
+      </div>
+
+      <!-- categories bar -->
+      <div class="skills-cats fade-up delay-2">
+        <span class="cat-pill">Backend Dev</span>
+        <span class="cat-pill">App Dev</span>
+        <span class="cat-pill">Web &amp; UI</span>
+        <span class="cat-pill">Desktop App</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─────────────────────────────── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-label fade-up">PERSONAL PROJECTS</h2>
+
+      <!-- filter tabs -->
+      <div class="project-filters fade-up delay-1" role="tablist" aria-label="Project filters">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="python" role="tab" aria-selected="false">Python &amp; CV</button>
+        <button class="filter-btn" data-filter="flutter" role="tab" aria-selected="false">Flutter App</button>
+        <button class="filter-btn" data-filter="java" role="tab" aria-selected="false">Java / API</button>
+      </div>
+
+      <div class="projects-grid fade-up delay-2">
+
+        <!-- FitFuel -->
+        <article class="project-card" data-category="python" id="project-fitfuel">
+          <div class="project-preview">
+            <div class="project-preview-inner fitfuel">
+              <div class="preview-icon">🥗</div>
+              <span class="preview-label">Calorie Detection</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-top-row">
+              <span class="project-cat-tag">Python • CV</span>
+              <div class="project-actions">
+                <a href="https://github.com/EnochJackson/fitfuel-calorie-detector" target="_blank"
+                  rel="noopener noreferrer" class="icon-btn" title="GitHub" aria-label="FitFuel GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-name">FitFuel</h3>
+            <p class="project-desc">Calorie detection system — extracts food info from images and maps it to calorie
+              data using OpenCV and API integration.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Image Processing</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- CareLoop -->
+        <article class="project-card" data-category="flutter" id="project-careloop">
+          <div class="project-preview">
+            <div class="project-preview-inner careloop">
+              <div class="preview-icon">🧓</div>
+              <span class="preview-label">Elder Care App</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-top-row">
+              <span class="project-cat-tag">Flutter</span>
+              <div class="project-actions">
+                <a href="https://github.com/EnochJackson/care_loop_v1" target="_blank" rel="noopener noreferrer"
+                  class="icon-btn" title="GitHub" aria-label="CareLoop GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-name">CareLoop</h3>
+            <p class="project-desc">Mobile application for elder care workflows — structured data handling,
+              caretaker-family coordination, and clean app logic.</p>
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Mobile</span>
+              <span class="tag">Firebase</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- FeedChain -->
+        <article class="project-card" data-category="flutter" id="project-feedchain">
+          <div class="project-preview">
+            <div class="project-preview-inner feedchain">
+              <div class="preview-icon">🗺️</div>
+              <span class="preview-label">Food Mapper</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-top-row">
+              <span class="project-cat-tag">Flutter</span>
+              <div class="project-actions">
+                <a href="https://github.com/EnochJackson/SRP-FeedChain-K5" target="_blank" rel="noopener noreferrer"
+                  class="icon-btn" title="GitHub" aria-label="FeedChain GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-name">FeedChain</h3>
+            <p class="project-desc">Surplus food mapper that connects food sources to people in need — focused on data
+              mapping, logical flow, and social impact.</p>
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Data Mapping</span>
+              <span class="tag">App Logic</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="projects-more fade-up delay-3">
+        <a href="https://github.com/EnochJackson" target="_blank" rel="noopener noreferrer" class="btn btn-outline">More
+          on GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-label fade-up">CONTACT</h2>
+      <div class="glass-card contact-card fade-up delay-1">
+        <div class="contact-header">
+          <p class="contact-intro">From conversations to creation —</p>
+          <h3 class="contact-headline">Let's talk</h3>
+        </div>
+        <div class="contact-options">
+          <a href="mailto:enochjackson441@gmail.com" class="contact-opt" id="contact-email">
+            <div class="copt-icon">✉</div>
+            <span class="copt-label">Get in Touch</span>
+            <span class="copt-val">enochjackson441@gmail.com</span>
+            <span class="copt-arrow">→</span>
+          </a>
+          <a href="https://github.com/EnochJackson" target="_blank" rel="noopener noreferrer" class="contact-opt"
+            id="contact-github">
+            <div class="copt-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </div>
+            <span class="copt-label">GitHub</span>
+            <span class="copt-val">@EnochJackson</span>
+            <span class="copt-arrow">→</span>
+          </a>
+          <a href="https://www.linkedin.com/in/enoch-jackson-10a53736a" target="_blank" rel="noopener noreferrer"
+            class="contact-opt" id="contact-linkedin">
+            <div class="copt-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </div>
+            <span class="copt-label">LinkedIn</span>
+            <span class="copt-val">Enoch Jackson C</span>
+            <span class="copt-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">EJ</span>
+        <span class="footer-tagline">Enoch Jackson C</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://github.com/EnochJackson" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/enoch-jackson-10a53736a" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Enoch Jackson C — Built with simplicity and clarity in mind.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
